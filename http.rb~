@@ -13,9 +13,7 @@ module HTTP
 		end 
 
 		#premiere ligne de la requete avant le header
-		def path
-		  
-		end
+
 
 		#scan du socket entier et recuperation des differents elements
 		def parse_socket(socket)

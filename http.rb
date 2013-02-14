@@ -9,7 +9,6 @@ module HTTP
 		   @headers = {}
 		   @body = ""
 		   @path = ""
-			puts @path
 		end 
 
 		#premiere ligne de la requete avant le header
