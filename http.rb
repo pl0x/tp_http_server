@@ -46,13 +46,14 @@ module HTTP
 
 		#permet de fabriquer le header + body du socket
 		def to_s
-		   res = "#{@code} "
-		   res += "#{@code_message} "
+		   res = "#{@code}"
+		   res += " #{@code_message}"
 		   #res += "#{@path}\n"
 		   @headers.each do |k, v|
-		      res += "#{k}: #{v}\n"
+		      res += "\n#{k}: #{v}"
 		   end
-		   res += "\n#{@body}"
+		   res += "\n\n#{@body}\n"
+		   #on doit rajouter un \n final car stringio en genere un 
 		end
 	end
 end
